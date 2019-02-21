@@ -6,7 +6,8 @@
         <li v-for="(data, index) in infos" :key="index"> 
             {{data.info}}
 
-            <i class="fa fa-edit" @click="editInfo(index)"></i>
+            <i class="fa fa-minus-circle" @click="removeInfo(index)"></i>
+
         </li>
         </ul>
         <p>{{info}}</p>
